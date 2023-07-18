@@ -1,0 +1,1331 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic)
+
+@-webkit-keyframes moveArrow
+  0%,
+  to
+    top: 0
+
+  70%
+    top: 10px
+
+@keyframes moveArrow
+  0%,
+  to
+    top: 0
+
+  70%
+    top: 10px
+
+@-webkit-keyframes animateDesktopFadeout
+  0%,
+  90%
+    opacity: 1
+
+  to
+    opacity: 0
+    -webkit-transform: rotateX(-90deg)
+    transform: rotateX(-90deg)
+
+@keyframes animateDesktopFadeout
+  0%,
+  90%
+    opacity: 1
+
+  to
+    opacity: 0
+    -webkit-transform: rotateX(-90deg)
+    transform: rotateX(-90deg)
+
+@-webkit-keyframes animateDesktopFadein
+  0%
+    opacity: 0
+
+  to
+    -webkit-transform: rotateX(0deg)
+    transform: rotateX(0deg)
+    opacity: 1
+
+@keyframes animateDesktopFadein
+  0%
+    opacity: 0
+
+  to
+    -webkit-transform: rotateX(0deg)
+    transform: rotateX(0deg)
+    opacity: 1
+
+@-webkit-keyframes rotate
+  0%
+    -webkit-transform: rotate(45deg)
+    transform: rotate(45deg)
+
+  to
+    -webkit-transform: rotate(-45deg)
+    transform: rotate(-45deg)
+
+@keyframes rotate
+  0%
+    -webkit-transform: rotate(45deg)
+    transform: rotate(45deg)
+
+  to
+    -webkit-transform: rotate(-45deg)
+    transform: rotate(-45deg)
+
+@-webkit-keyframes moveLike
+  0%
+    opacity: 1
+    top: 0
+
+  40%
+    -webkit-transform: rotateZ(10deg)
+    transform: rotateZ(10deg)
+    top: 0
+
+  70%
+    top: -5px
+    -webkit-transform: rotateZ(0)
+    transform: rotateZ(0)
+
+  to
+    -webkit-transform: rotateZ(0)
+    transform: rotateZ(0)
+
+@keyframes moveLike
+  0%
+    opacity: 1
+    top: 0
+
+  40%
+    -webkit-transform: rotateZ(10deg)
+    transform: rotateZ(10deg)
+    top: 0
+
+  70%
+    top: -5px
+    -webkit-transform: rotateZ(0)
+    transform: rotateZ(0)
+
+  to
+    -webkit-transform: rotateZ(0)
+    transform: rotateZ(0)
+
+@-webkit-keyframes moveLamp
+  20%
+    -webkit-transform: rotateZ(10deg)
+    transform: rotateZ(10deg)
+
+  50%
+    -webkit-transform: rotateZ(-10deg)
+    transform: rotateZ(-10deg)
+
+@keyframes moveLamp
+  20%
+    -webkit-transform: rotateZ(10deg)
+    transform: rotateZ(10deg)
+
+  50%
+    -webkit-transform: rotateZ(-10deg)
+    transform: rotateZ(-10deg)
+
+@-webkit-keyframes movement_pl
+  0%
+    margin-left: -1700px
+
+  to
+    margin-left: 950px
+
+@keyframes movement_pl
+  0%
+    margin-left: -1700px
+
+  to
+    margin-left: 950px
+
+@-webkit-keyframes movement_pr
+  0%
+    margin-left: 950px
+
+  to
+    margin-left: -1700px
+
+@keyframes movement_pr
+  0%
+    margin-left: 950px
+
+  to
+    margin-left: -1700px
+
+*
+  -webkit-box-sizing: border-box
+  box-sizing: border-box
+  padding: 0
+  margin: 0
+
+a
+  -webkit-transition: .2s
+  -o-transition: .2s
+  transition: 0.2s
+
+body
+  -webkit-transition: .2s
+  -o-transition: .2s
+  transition: 0.2s
+  background: #fff
+  font-size: 17px
+  font-family: 'Roboto', sans-serif
+  font-style: normal
+  font-weight: 400
+  line-height: 1
+  color: #000
+
+.wrap
+  margin: 0 auto
+  height: 100%
+  overflow-y: hidden
+  overflow-x: hidden
+
+.text-gradient
+  background: -o-linear-gradient(45deg, #23afe4 33%, #166792 66%, #8aa9d6)
+  background: linear-gradient(45deg, #23afe4 33%, #166792 66%, #8aa9d6)
+  -webkit-background-clip: text
+  -webkit-text-fill-color: transparent
+
+.text-center
+  text-align: center
+
+.header__menu a:after, h2
+  background: -o-linear-gradient(45deg, #23afe4 33%, #166792 66%, #8aa9d6)
+  background: linear-gradient(45deg, #23afe4 33%, #166792 66%, #8aa9d6)
+
+h1, h2, h3, h4, h5, h6
+  -webkit-background-clip: text
+  -webkit-text-fill-color: transparent
+  text-transform: uppercase
+
+h2
+  font-size: 35px
+
+h1, h3, h4, h5, h6
+  background: -o-linear-gradient(45deg, #23afe4 33%, #166792 66%, #8aa9d6)
+  background: linear-gradient(45deg, #23afe4 33%, #166792 66%, #8aa9d6)
+
+h3
+  font-size: 25px
+
+h4
+  font-size: 16px
+
+a
+  color: inherit
+  text-decoration: none
+
+ul
+  list-style: none
+
+.header__menu a:hover:after, .logo img, .w100
+  width: 100%
+
+.d-block
+  display: block
+
+.d-inblock
+  display: inline-block
+
+.lefter
+  float: left
+
+.bolder
+  font-weight: 700
+
+.header__menu a, .upper
+  text-transform: uppercase
+
+.relative
+  position: relative
+
+.container
+  margin: 0 auto
+  width: 1170px
+  padding: 0 15px
+
+.cols-4
+  width: 25%
+
+.cols-3
+  width: 33%
+
+.cols-2
+  width: 50%
+
+.center-x-y, .d-flex
+  display: -webkit-box
+  display: -ms-flexbox
+  display: flex
+  -webkit-display: flex
+
+.center-x-y
+  -webkit-box-pack: center
+  -ms-flex-pack: center
+  justify-content: center
+  -webkit-justify-content: center
+  -webkit-box-align: center
+  -ms-flex-align: center
+  align-items: center
+  -webkit-align-items: center
+
+.d-flex
+  -ms-flex-wrap: wrap
+  flex-wrap: wrap
+  -webkit-flex-wrap: wrap
+
+.justify-space
+  -webkit-box-pack: justify
+  -webkit-justify-content: space-between
+  -ms-flex-pack: justify
+  justify-content: space-between
+
+.align-center
+  -webkit-box-align: center
+  -webkit-align-items: center
+  -ms-flex-align: center
+  align-items: center
+
+.m-left
+  margin-left: auto
+
+.m-right
+  margin-right: auto
+
+.logo
+  width: 223px
+
+.item-parallax
+  height: 100%
+
+.header
+  background: url(../img/mainbg.svg) no-repeat top center
+  background-size: cover
+  min-height: 470px
+  overflow: hidden
+
+.header__parallax
+  position: absolute
+  top: -20px
+  left: -20px
+  bottom: -20px
+  right: -20px
+
+  img, svg
+    min-width: 100%
+    min-height: 100%
+    position: relative
+    left: 50%
+    -webkit-transform: translateX(-50%)
+    -ms-transform: translateX(-50%)
+    transform: translateX(-50%)
+
+.header__menu
+  display: -webkit-box
+  display: -webkit-flex
+  display: -ms-flexbox
+  display: flex
+
+  li
+    margin-right: 20px
+
+  a:after
+    display: block
+    content: ""
+    height: 2px
+    width: 0%
+    -webkit-transition: width .3s ease-in-out
+    -o-transition: width .3s ease-in-out
+    transition: width .3s ease-in-out
+    position: relative
+    top: 5px
+
+.header__lang
+  a
+    margin-left: 5px
+    margin-right: 5px
+
+  img
+    max-width: 17px
+
+.top
+  &.fixed
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    background: rgba(255, 255, 255, 0.72)
+    z-index: 10
+    padding-top: 10px
+    padding-bottom: 10px
+    -webkit-transition: .5s
+    -o-transition: .5s
+    transition: 0.5s
+
+    .logo
+      width: 150px
+
+  padding-top: 15px
+  z-index: 2
+
+  .container
+    width: 100%
+    padding-left: 35px
+    padding-right: 35px
+
+.header, .header-wrap, .header-wrap__bottom, .top
+  position: relative
+
+.arrow-block
+  display: block
+
+  img
+    width: 20px
+
+.header-wrap__bottom
+  min-height: 250px
+
+.header-wrap__pic
+  position: absolute
+  width: 394px
+
+  >
+    img, object, svg
+      width: 100%
+
+.header-wrap__pic-top
+  bottom: 100%
+
+.header-wrap__pic-right
+  right: 0
+
+.header-wrap__pic-left
+  left: 0
+
+.header-wrap__pic-bottom
+  bottom: 0
+
+.header-wrap__pic-main
+  display: block
+  margin-bottom: 30px
+  width: 150px
+
+.header-wrap__arrow
+  position: absolute
+  bottom: 0
+  left: 50%
+  -webkit-transform: translateX(-50%)
+  -ms-transform: translateX(-50%)
+  transform: translateX(-50%)
+  padding-bottom: 30px
+  text-align: center
+
+  .dragon
+    position: absolute
+    bottom: 0
+    right: 100%
+    margin-bottom: 120px
+
+.header-wrap__pic-link
+  display: block
+  position: absolute
+  display: -webkit-box
+  display: -webkit-flex
+  display: -ms-flexbox
+  display: flex
+  -webkit-box-pack: center
+  -webkit-justify-content: center
+  -ms-flex-pack: center
+  justify-content: center
+  -webkit-transition: 1s
+  -o-transition: 1s
+  transition: 1s
+
+  &:hover
+    .animateDesktopFadeout
+      -webkit-animation: animateDesktopFadeout .3s
+      animation: animateDesktopFadeout .3s
+      -webkit-animation-fill-mode: forwards
+      animation-fill-mode: forwards
+
+    .animateDesktopFadein
+      -webkit-animation: animateDesktopFadein .3s
+      animation: animateDesktopFadein .3s
+      -webkit-animation-fill-mode: both
+      animation-fill-mode: both
+      -webkit-animation-delay: .2s
+      animation-delay: 0.2s
+
+.header-wrap__pic-link-1
+  top: 56px
+  left: 122px
+  width: 60px
+
+.header-wrap__pic-link-2
+  top: 60px
+  left: 210px
+  width: 58px
+
+.header-wrap__pic-link-3
+  top: 25%
+  left: 36%
+
+  .decktop-1-1
+    top: 35%
+
+.header-wrap__pic-link-4
+  top: 37%
+  right: 11%
+  width: 40px
+
+.arrow-animate
+  position: relative
+  -webkit-animation: moveArrow 2s infinite
+  animation: moveArrow 2s infinite
+
+.animateDesktopFadein
+  -webkit-transform: rotateX(90deg)
+  transform: rotateX(90deg)
+  opacity: 0
+
+.decktop-1
+  width: 80%
+
+.decktop-1-1
+  position: absolute
+
+.section-bottom
+  padding: 30px
+
+.strategy
+  padding: 50px
+
+.strategy__content
+  width: 100%
+  margin-top: -20px
+  height: 600px
+
+.strategy__item
+  position: absolute
+
+  img
+    position: relative
+    top: 0
+    display: block
+
+.strategy__item-man
+  top: 25%
+
+.strategy__item-graph
+  left: 50%
+  -webkit-transform: translateX(-50%)
+  -ms-transform: translateX(-50%)
+  transform: translateX(-50%)
+  top: 34%
+
+.strategy__item-people
+  right: 0
+  top: 25%
+
+.strategy__content-item
+  position: absolute
+  font-size: 20px
+  display: -webkit-box
+  display: -webkit-flex
+  display: -ms-flexbox
+  display: flex
+
+.strategy__content-item-1
+  top: 8%
+  left: 8%
+
+  .strategy__content-text
+    width: 100px
+
+.strategy__content-item-2
+  top: 18%
+  left: 28%
+
+  .strategy__content-text
+    width: 180px
+
+.strategy__content-item-3
+  top: 23%
+  left: 64%
+
+  .strategy__content-text
+    width: 150px
+
+.strategy__content-item-4
+  .strategy__content-text
+    width: 150px
+
+  top: 8%
+  left: 80%
+
+.strategy__content-count
+  font-size: 350%
+  font-weight: 700
+  color: #fff
+  margin-right: 10px
+  margin-top: -5px
+
+.strategy__item-lamp1
+  top: 11%
+  left: 56%
+
+.strategy__item-like1
+  top: -4%
+  left: 88%
+
+  &:hover img
+    -webkit-animation: moveLike 2s infinite
+    animation: moveLike 2s infinite
+
+.strategy__item-like2
+  img:hover
+    -webkit-animation: moveLike 2s infinite
+    animation: moveLike 2s infinite
+
+  z-index: 3
+  top: 63%
+  left: 18%
+
+.strategy__item-doc
+  top: 53%
+  left: 78%
+
+.strategy__item-lamp2
+  top: 78%
+  left: 10%
+
+.strategy__item-lamp3
+  top: 85%
+  left: 90%
+
+.arrow-left, .arrow-right
+  position: relative
+  -webkit-transition: .2s
+  -o-transition: .2s
+  transition: .2s
+  left: 0
+  right: 0
+
+.tactic
+  font-size: 20px
+
+.tactic__items
+  padding: 0 20px
+
+.tactic__item
+  -webkit-box-align: center
+  -webkit-align-items: center
+  -ms-flex-align: center
+  align-items: center
+  position: relative
+  z-index: 2
+  -webkit-transition: 1s
+  -o-transition: 1s
+  transition: 1s
+
+  &:hover
+    .arrow-left
+      left: -5px
+
+    .arrow-right
+      left: 5px
+
+.tactic__item-content
+  position: relative
+  width: 50px
+  display: table
+
+.tactic__item-2, .tactic__item-4, .tactic__item-6
+  -webkit-box-pack: end
+  -webkit-justify-content: flex-end
+  -ms-flex-pack: end
+  justify-content: flex-end
+
+.tactic__item-2 .tactic__item-content
+  top: 48px
+
+.tactic__item-3 .tactic__item-content
+  top: 40px
+
+.tactic__item-4 .tactic__item-content
+  top: -20px
+
+.quad-icon
+  width: 30px
+  height: 30px
+  border: 2px solid #802d64
+
+.quad-icon-sm1
+  width: 15px
+  height: 15px
+  background: #802d64
+
+.quad-icon-sm2
+  width: 15px
+  height: 15px
+  background: #cd6e95
+
+.branding
+  padding-bottom: 50px
+  padding-top: 50px
+
+.branding__icon-1, .branding__icon-2, .branding__icon-3, .branding__icon-4, .branding__icon-5, .branding__icon-6
+  position: absolute
+  top: 2%
+  left: 27%
+  -webkit-transform: rotate(45deg)
+  -ms-transform: rotate(45deg)
+  transform: rotate(45deg)
+
+.branding__icon-2, .branding__icon-3, .branding__icon-4, .branding__icon-5, .branding__icon-6
+  top: 24%
+  left: 87%
+
+.branding__icon-3, .branding__icon-4, .branding__icon-5, .branding__icon-6
+  top: 46%
+
+.branding__icon-4, .branding__icon-5, .branding__icon-6
+  top: 20%
+  left: 5%
+
+.branding__icon-5
+  top: 46%
+
+.branding__icon-6
+  top: 46%
+  top: 10%
+  left: 32%
+
+.branding__items
+  -webkit-box-pack: center
+  -webkit-justify-content: center
+  -ms-flex-pack: center
+  justify-content: center
+  margin-top: 50px
+
+.branding__item
+  -webkit-transition: .5s
+  -o-transition: .5s
+  transition: .5s
+  margin: 0 10px
+  font-size: 20px
+  position: relative
+
+  &:hover
+    .branding__icon-1
+      -webkit-animation: rotate 1s linear infinite forwards
+      animation: rotate 1s linear infinite forwards
+
+    .branding__icon-2
+      -webkit-animation: rotate .5s linear infinite forwards
+      animation: rotate 0.5s linear infinite forwards
+
+    .branding__icon-3
+      -webkit-animation: rotate 1s linear infinite forwards
+      animation: rotate 1s linear infinite forwards
+
+    .branding__icon-4
+      -webkit-animation: rotate 2s linear infinite forwards
+      animation: rotate 2s linear infinite forwards
+
+    .branding__icon-5
+      -webkit-animation: rotate .5s linear infinite forwards
+      animation: rotate 0.5s linear infinite forwards
+
+    .branding__icon-6
+      -webkit-animation: rotate 1s linear infinite forwards
+      animation: rotate 1s linear infinite forwards
+
+    .brandlamp .color
+      -webkit-transition-delay: .2s
+      -o-transition-delay: .2s
+      transition-delay: .2s
+      fill: #f8ee10
+
+.branding__item-1 .branding__item-text
+  text-align: right
+  position: relative
+  left: -30px
+
+.branding__item-2 .branding__item-text
+  position: relative
+  left: 40px
+
+.branding__item-text
+  width: 130px
+  display: table
+  margin: -80px auto 0
+
+.contacts
+  background: #d7eefc
+  padding: 70px 0
+
+.s-form-nav__title
+  font-size: 35px
+  font-weight: 700
+  cursor: pointer
+  position: relative
+
+.s-form-nav .hide-form-wrap::after
+  content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAOCAYAAAFcNtxbAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA/xpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQyIDc5LjE2MDkyNCwgMjAxNy8wNy8xMy0wMTowNjozOSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1wTU06T3JpZ2luYWxEb2N1bWVudElEPSJ1dWlkOjVEMjA4OTI0OTNCRkRCMTE5MTRBODU5MEQzMTUwOEM4IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjA5M0I4OUZDNUVCNzExRUE4Q0Y2QUQwOEQxMjBBOEM1IiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjA5M0I4OUZCNUVCNzExRUE4Q0Y2QUQwOEQxMjBBOEM1IiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDQyAoV2luZG93cykiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDowMGI3ZTc1Zi03MDQ0LTVlNDItODE1NC1jYTQ3Y2M3NTdkN2QiIHN0UmVmOmRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDoyMDJjODMxMS00NDkwLTUwNDYtYmZjNC01OWQ2MDJhZTA5ODgiLz4gPGRjOnRpdGxlPiA8cmRmOkFsdD4gPHJkZjpsaSB4bWw6bGFuZz0ieC1kZWZhdWx0Ij5QcmludDwvcmRmOmxpPiA8L3JkZjpBbHQ+IDwvZGM6dGl0bGU+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+5HRNTgAAArxJREFUeNpiUF7/hEtp1X2G////M7AwMDB8+/fty3/p+rUMAAHECJSZ8Pfd64Jf924tYmH4+1fx76eP/5+2hDECBBBYBqg0/9+3rxv+fXwf+Of9m/9/P7wD6y/4//NHwb8vnzb+/fTh/5Mqb0agGANAAI7FIAVAGAaCa//Qkz7ND/lJT6WnUhAUkpomJh6WgWUmiuLc9Lkxr47Z2xn2aiJmgxevzIcUNuSFDT+InJwTVKG/xVCmXI+9fQKwPMY2AMIwEPQSYSwEFQtlFXpgJxpEbUcE2fxbFJEl+3Sn0HmBLgwA2KI/MxUAJEzFTcObSjRL7YB34J8Sb58AB4wru/63aWeO5pQC4mLHcXQzmNLKWc663GQ+AaggYxsEYhiKWqnIHtT0NwYNoqGgQwhGoLzmCgoo2Ib6NmADGAFOxDH/c3Gks2R9JXmOv034Al0i57Ax2Jceh3/bAp+ge5wXHPkoY6CvRlP9iCZYSgK9QXdYteD+EcTDMgd842E2Bb1Q74TjyGZWM1lwnYKpf523K8IY1yL3ynYFOFgBof2z2zT8MBQL8Em/FRBxsF037jRUC1lrgYPQCjJ+ArRJ7TYIw0DUQhEKA9DTMgIdC+TTIAQFdRqmoKBgAMQIQULAFDAIvyIbxLF5d3YcB3LSKSc7fvfeu6utW4t2XEBtARDjTEOPBmfAaD8oy3KPXclsbTTK8kQs5uI3tE7ZRVWd8Q2tzQxuam5CzmqcZaahR6CqpgQ8Ql7bwIolAyQl1zU1qGSfp+ABCul5ZxP/3EBo7FYOESJzMIwB5Ji5x9LJFI1sk4Jq+Iz76L1b8XoGHk+MXCWapascnePaAv3nczNh5B130Wu7LHzRgeerkY+Jg3GCb4gHaCBjJ9MCagcoo+dmVoiO6LVBeZVqG2gjEuQAQAdIfuDsA8AjzoaoJ8hOUIovapKpWcZcXvAAAAAASUVORK5CYII=)
+  position: absolute
+  right: 0
+  top: 12px
+  -webkit-transform: rotateZ(180deg)
+  -ms-transform: rotate(180deg)
+  transform: rotateZ(180deg)
+
+.s-form-nav__dropdown, .s-form-nav__title
+  padding-bottom: 30px
+
+.s-form-nav__dropdown-item
+  font-size: 20px
+  position: relative
+  padding-left: 3.09524rem
+  padding-top: .47619rem
+  padding-bottom: .47619rem
+  cursor: pointer
+
+  &.s-form-nav__dropdown-item
+    &::before
+      content: ''
+      position: absolute
+      left: 0
+      top: 1rem
+      width: 1.5rem
+      height: .19048rem
+      background-color: currentColor
+
+    &::after
+      content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAOCAYAAAFcNtxbAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA/xpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQyIDc5LjE2MDkyNCwgMjAxNy8wNy8xMy0wMTowNjozOSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1wTU06T3JpZ2luYWxEb2N1bWVudElEPSJ1dWlkOjVEMjA4OTI0OTNCRkRCMTE5MTRBODU5MEQzMTUwOEM4IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjA5M0I4OUZDNUVCNzExRUE4Q0Y2QUQwOEQxMjBBOEM1IiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjA5M0I4OUZCNUVCNzExRUE4Q0Y2QUQwOEQxMjBBOEM1IiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDQyAoV2luZG93cykiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDowMGI3ZTc1Zi03MDQ0LTVlNDItODE1NC1jYTQ3Y2M3NTdkN2QiIHN0UmVmOmRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDoyMDJjODMxMS00NDkwLTUwNDYtYmZjNC01OWQ2MDJhZTA5ODgiLz4gPGRjOnRpdGxlPiA8cmRmOkFsdD4gPHJkZjpsaSB4bWw6bGFuZz0ieC1kZWZhdWx0Ij5QcmludDwvcmRmOmxpPiA8L3JkZjpBbHQ+IDwvZGM6dGl0bGU+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+5HRNTgAAArxJREFUeNpiUF7/hEtp1X2G////M7AwMDB8+/fty3/p+rUMAAHECJSZ8Pfd64Jf924tYmH4+1fx76eP/5+2hDECBBBYBqg0/9+3rxv+fXwf+Of9m/9/P7wD6y/4//NHwb8vnzb+/fTh/5Mqb0agGANAAI7FIAVAGAaCa//Qkz7ND/lJT6WnUhAUkpomJh6WgWUmiuLc9Lkxr47Z2xn2aiJmgxevzIcUNuSFDT+InJwTVKG/xVCmXI+9fQKwPMY2AMIwEPQSYSwEFQtlFXpgJxpEbUcE2fxbFJEl+3Sn0HmBLgwA2KI/MxUAJEzFTcObSjRL7YB34J8Sb58AB4wru/63aWeO5pQC4mLHcXQzmNLKWc663GQ+AaggYxsEYhiKWqnIHtT0NwYNoqGgQwhGoLzmCgoo2Ib6NmADGAFOxDH/c3Gks2R9JXmOv034Al0i57Ax2Jceh3/bAp+ge5wXHPkoY6CvRlP9iCZYSgK9QXdYteD+EcTDMgd842E2Bb1Q74TjyGZWM1lwnYKpf523K8IY1yL3ynYFOFgBof2z2zT8MBQL8Em/FRBxsF037jRUC1lrgYPQCjJ+ArRJ7TYIw0DUQhEKA9DTMgIdC+TTIAQFdRqmoKBgAMQIQULAFDAIvyIbxLF5d3YcB3LSKSc7fvfeu6utW4t2XEBtARDjTEOPBmfAaD8oy3KPXclsbTTK8kQs5uI3tE7ZRVWd8Q2tzQxuam5CzmqcZaahR6CqpgQ8Ql7bwIolAyQl1zU1qGSfp+ABCul5ZxP/3EBo7FYOESJzMIwB5Ji5x9LJFI1sk4Jq+Iz76L1b8XoGHk+MXCWapascnePaAv3nczNh5B130Wu7LHzRgeerkY+Jg3GCb4gHaCBjJ9MCagcoo+dmVoiO6LVBeZVqG2gjEuQAQAdIfuDsA8AjzoaoJ8hOUIovapKpWcZcXvAAAAAASUVORK5CYII=)
+      position: absolute
+      right: 0
+      top: 12px
+
+.form-wrap
+  margin-left: auto
+  margin-right: auto
+  max-width: 740px
+
+  input
+    border: 0
+    width: 100%
+    background: 0 0
+    padding: 5px 15px
+    color: 0
+    letter-spacing: 1px
+    margin-bottom: 30px
+    outline: 0
+    font-family: "Roboto", sans-serif
+
+  textarea
+    width: 100%
+    background: 0 0
+    padding: 5px 15px
+    color: 0
+    letter-spacing: 1px
+    margin-bottom: 30px
+    outline: 0
+    font-family: "Roboto", sans-serif
+
+  input::-webkit-input-placeholder, textarea::-webkit-input-placeholder, input::-moz-placeholder, textarea::-moz-placeholder
+    color: #000
+    font-family: "Roboto", sans-serif
+
+  input
+    &:-ms-input-placeholder, &::-ms-input-placeholder
+      color: #000
+      font-family: "Roboto", sans-serif
+
+  textarea
+    &:-ms-input-placeholder, &::-ms-input-placeholder
+      color: #000
+      font-family: "Roboto", sans-serif
+
+  input::placeholder, textarea::placeholder
+    color: #000
+    font-family: "Roboto", sans-serif
+
+  input
+    border-bottom: 1px solid #272727
+
+  textarea
+    border: 1px solid #272727
+    min-height: 200px
+    resize: none
+    font-size: 14px
+
+.form-wrap__head
+  font-size: 14px
+  padding: 5px 15px
+
+.form-wrap__btn
+  background: -o-linear-gradient(45deg, #23afe4 33%, #166792 66%, #8aa9d6)
+  background: linear-gradient(45deg, #23afe4 33%, #166792 66%, #8aa9d6)
+  border: 0
+  outline: 0
+  color: #fff
+  text-align: center
+  width: 180px
+  padding: 15px 0
+  font-size: 17px
+  margin-left: auto
+  display: block
+  cursor: pointer
+
+.footer
+  background: #d7eefc
+  padding: 40px 0
+  font-size: 12px
+
+.plane_left, .plane_right
+  position: absolute
+  left: 50%
+  width: 639px
+  z-index: 3
+
+.plane_left
+  background: url(../img/plane_left.svg) no-repeat
+  top: 255px
+  height: 55px
+  margin-left: -589px
+  -webkit-animation: movement_pl 25s infinite
+  animation: movement_pl 25s infinite
+
+.plane_right
+  top: 123px
+  height: 52px
+  background: url(../img/plane_right.svg) no-repeat
+  margin-left: 373px
+  -webkit-animation: movement_pr 30s infinite
+  animation: movement_pr 30s infinite
+
+.lamp:hover
+  -webkit-animation: moveLamp 1s
+  animation: moveLamp 1s
+  -webkit-animation-fill-mode: forwards
+  animation-fill-mode: forwards
+
+  .fil2
+    -webkit-transition-delay: .5s
+    -o-transition-delay: .5s
+    transition-delay: .5s
+    fill: #e0f518b5
+
+  .fil4
+    -webkit-transition-delay: .5s
+    -o-transition-delay: .5s
+    transition-delay: .5s
+    fill: #e0f518b5
+    fill: #ddc03d
+
+.tactic__item-5, .tactic__item-6
+  display: flex
+
+.svg-new
+  width: 75%
+
+.text-new
+  width: 20%
+
+.text-new-1
+  margin-left: -45px
+
+.tactic__item-text-2
+  padding-top: 40px
+
+.title__container
+  display: flex
+  justify-content: space-evenly
+
+.tactic__item
+  display: flex
+  flex-wrap: nowrap
+
+.conslting
+  display: flex
+  align-items: center
+
+.conslting__image
+  width: 85%
+
+.conslting__info
+  padding-top: 30px
+
+/* .svg-correct {
+ *  width: 30%;
+ *}
+
+/*-------------------------------------------------------------------
+@media (min-width: 1270px)
+  .header-wrap
+    height: 100vh
+
+  .header
+    min-height: 70%
+
+  .header-wrap__arrow
+    padding-bottom: 60px
+
+@media (max-width: 1270px)
+  .container
+    width: 950px
+
+  .strategy__item-man
+    width: 25%
+
+  .strategy__item-people
+    width: 17%
+
+  .strategy__content
+    height: 500px
+
+  .strategy__item-graph
+    width: 50%
+
+  .strategy__content-item
+    font-size: inherit
+
+  .tactic__item-img
+    width: 100%
+
+  .tactic__item-text
+    width: 40%
+
+  .header-wrap__arrow .dragon
+    display: none
+
+@media (max-width: 1023px)
+  .container
+    width: 700px
+
+  body
+    font-size: 15px
+
+  .header__menu li
+    margin-right: 20px
+
+  .logo
+    width: 180px
+
+  .header-wrap__pic
+    width: 284px
+
+  .header-wrap__pic-link-1
+    top: 30%
+    left: 30%
+    width: 17%
+
+  .header
+    min-height: 330px
+
+  .header-wrap__pic-main
+    display: block
+    margin-bottom: 30px
+    margin-left: auto
+    margin-right: auto
+    width: 50%
+
+  .header-wrap__bottom
+    min-height: 180px
+
+  .header-wrap__pic-link-3
+    top: 22%
+    left: 32%
+
+  .header-wrap__pic-link-2
+    top: 32%
+    left: 52%
+    width: 16%
+
+  .header-wrap__pic-link:hover
+    .animateDesktopFadein, .animateDesktopFadeout
+      -webkit-animation: none
+      animation: none
+
+  .decktop-1
+    width: 70%
+
+  .header-wrap__pic-link-4
+    top: 36%
+    right: 9%
+    width: 14%
+
+  .lamp
+    width: 40px
+
+  .strategy__content
+    height: 320px
+
+  .strategy__item-graph
+    top: 20%
+
+  .strategy__content-item-1 .strategy__content-text, .strategy__content-item-2 .strategy__content-text, .strategy__content-item-3 .strategy__content-text, .strategy__content-item-4 .strategy__content-text, .strategy__content-item-5 .strategy__content-text, .strategy__content-item-6 .strategy__content-text
+    width: 130px
+
+  .strategy__item-man, .strategy__item-people
+    top: 30%
+
+  .branding__item
+    img, svg
+      width: 100%
+
+  .tactic__item-content, .tactic__item-img, .tactic__item-text
+    width: 100%
+
+  .tactic__item-content
+    -webkit-box-ordinal-group: 3
+    -webkit-order: 2
+    -ms-flex-order: 2
+    order: 2
+    margin-top: 20px
+
+  .tactic__item-2 .tactic__item-content, .tactic__item-3 .tactic__item-content
+    top: auto
+
+  .tactic
+    font-size: inherit
+
+    .arrow-left, .arrow-right
+      display: none
+
+  .tactic__item
+    margin-top: 30px
+
+  .tactic__item-content
+    text-align: center
+
+  .branding__item
+    width: 40%
+    font-size: inherit
+
+  .branding__item-text
+    margin-top: -10px
+
+  .strategy
+    padding-left: 0
+    padding-right: 0
+
+  .branding__item .brandlamp
+    width: 93%
+
+@media (max-width: 767px)
+  body
+    font-size: 14px
+
+  .container
+    width: 400px
+    padding-right: 10px
+    padding-left: 10px
+
+  .header-wrap__pic, .strategy__item
+    display: none
+
+  .top .container
+    -webkit-box-orient: vertical
+    -webkit-box-direction: normal
+    -webkit-flex-direction: column
+    -ms-flex-direction: column
+    flex-direction: column
+
+  .header__menu li
+    margin-right: 10px
+
+  .logo
+    margin-bottom: 20px
+
+  .strategy__content
+    margin-top: 30px
+    height: auto
+
+    .strbg
+      display: none
+
+  .strategy__content-item
+    position: static
+    width: 200px
+    margin: 20px auto
+
+  .strategy__content-item-1 .strategy__content-text
+    width: 100%
+
+  .strategy__content-count
+    color: #1b84b3
+    margin-right: 20px
+
+  .s-form-nav__dropdown-item, .strategy__content-text
+    font-size: 17px
+
+  .quad-icon, .quad-icon-sm1, .quad-icon-sm2
+    width: 10px
+    height: 10px
+    border-width: 1px
+
+  .header
+    min-height: 520px
+
+  .header-wrap__pic-main
+    width: 70%
+
+  .header__menu
+    display: none
+
+  .s-form-nav .hide-form-wrap::after
+    top: 2px
+
+  .s-form-nav__title
+    font-size: 20px
+
+@media (max-width: 413px)
+  .container
+    width: 300px
+
+  .header
+    min-height: 70vh
+
+  .header__menu
+    display: none
+
+  .header-wrap
+    min-height: 100vh
+
+  .header-wrap__pic-main
+    width: auto
+    height: 60vh
+
+  .header-wrap__arrow
+    padding-bottom: 50px
+
+  .branding__item-2 .branding__item-text
+    left: 0
+
+  .branding__item-text
+    margin-top: 10px
+
+  .branding__item-1 .branding__item-text
+    left: -20px
+
+@media (max-width: 1300px)
+
+@media (max-width: 1020px)
+  .svg-new
+    max-width: 65%
+
+  .text-new-1
+    margin-left: 0
+
+@media (max-width: 767px)
+  .d-flex
+    display: flex
+    flex-wrap: wrap
+
+  .conslting
+    flex-wrap: nowrap
+
+  .svg-new
+    max-width: 100%
+
+  .tactic__item-text-2, .conslting__info
+    padding-top: 0
+
+  .consalting .tactic__item-content
+    margin-top: 0
+
+  .tactic__item-2 .tactic__item-text
+    font-size: 14px
+    margin-left: 12px
+
+/*
+ *.conslting__svg path {
+ *  cursor: pointer;
+ *  transition: all 0.5s;
+ *
+ *}
+ *
+ *.conslting__svg path:hover {
+ *  transform: scale(1.05);
+ *
+ *}
+ *
+ *.conslting__svg foreignobject {
+ *  display: none;
+ *  opacity: 0;
+ *  transition: all 0.5s;
+ *}
+ *
+ *.conslting__svg path:hover~foreignObject {
+ *  display: block;
+ *  opacity: 1;
+ *  transition: all 0.5s;
+ *}
+
+.etor
+  width: 100%
+  height: 100%
+  padding: 0px 0px 0px 0px
+
+.header-wrap__pic-main
+  width: 50%
+  max-width: 500px
+  margin-right: auto
+  margin-left: auto
+
+.port
+  position: absolute
+  width: 50px !important
+  left: 95px
+  bottom: -5px
+
+.tactic__item-6
+  margin-right: -115px
+
+  .tactic__item-text
+    padding-top: 50px
+
+.tactic__item-5 .text-new
+  margin-bottom: 27px
+
+.text-correct
+  margin-bottom: 50px
+
+.text-correct-2
+  padding-top: 15px
+
+@media (max-width: 1270px)
+  .header-wrap__pic-main
+    width: 40%
+    padding-bottom: 60px
+
+@media (max-width: 1023px)
+  .text-correct
+    margin-bottom: 0
+
+  .text-correct-2, .tactic__item-6 .tactic__item-text
+    padding-top: 0
+
+  .tactic__item-5 .text-new
+    margin-bottom: 0
+
+  .tactic__item-6
+    margin-right: 0
+
+  .svg-new-6
+    width: 66%
+
+@media (max-width: 767px)
+  .header-wrap__pic-main
+    width: 128%
+    padding-bottom: 0
+
+  .svg-new-6
+    width: 100%

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2019 (64-Bit) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="190.683mm" height="120.97mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 19056.55 12089.57"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil0 {fill:url(#id0)}
+   ]]>
+  </style>
+  <linearGradient id="id0" gradientUnits="userSpaceOnUse" x1="-1143.77" y1="6789.56" x2="20200.31" y2="5674.49">
+   <stop offset="0" style="stop-opacity:1; stop-color:#166792"/>
+   <stop offset="1" style="stop-opacity:1; stop-color:#23AFE4"/>
+  </linearGradient>
+ </defs>
+ <g id="Слой_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_827291088">
+   <path class="fil0" d="M9528.27 12089.57c-655.25,0 -1311.21,-249.89 -1811.73,-750.4l-6965.78 -6964.98c-1001.02,-1001.02 -1001.02,-2622.41 0,-3623.42 1001.02,-1001.01 2622.43,-1001.01 3623.45,0l5154.05 5152.54 5154.05 -5152.54c1001.02,-1001.01 2622.43,-1001.01 3623.45,0 1001.02,1001.01 1001.02,2622.4 0,3623.42l-6965.78 6964.98c-500.51,500.51 -1155.76,750.4 -1811.73,750.4z"/>
+  </g>
+ </g>
+</svg>
