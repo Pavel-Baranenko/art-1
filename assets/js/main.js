@@ -66,6 +66,7 @@ var parallaxInstance = new Parallax(scene);
 
 
 const divEl = document.querySelector('.hover__img');
+
 const icons = document.querySelector('.icons');
 divEl.addEventListener('mouseover', function () {
 	icons.classList.add('active');
@@ -73,6 +74,11 @@ divEl.addEventListener('mouseover', function () {
 divEl.addEventListener('mouseout', function () {
 	icons.classList.remove('active');
 })
+
+
+
+
+
 
 var timeoutHandler = null;
 $(".hover__img").click(function () {
@@ -84,3 +90,34 @@ $(".hover__img").click(function () {
 
 	}, 800);
 });
+
+// const screenWidth = window.screen.width
+
+// if (screenWidth < 768) {
+// 	const iosMob = document.querySelector('.hover-ios')
+// 	const bgBlue = document.querySelector('.bg-blu-fone')
+// 	console.log(bgBlue);
+// 	iosMob.addEventListener('mouseover', function () {
+// 		iosMob.classList.toggle('active-mob');
+// 		bgBlue.classList.remove('dis-act');
+// 	})
+// 	iosMob.addEventListener('mouseout', function () {
+// 		iosMob.classList.toggle('active-mob');
+// 		bgBlue.classList.add('dis-act');
+// 	})
+// }
+
+
+if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+	const iosMob = document.querySelector('.hover-ios')
+	const bgBlue = document.querySelector('.bg-blu-fone')
+	console.log(bgBlue);
+	iosMob.addEventListener('mouseover', function () {
+		iosMob.classList.toggle('active-mob');
+		bgBlue.classList.remove('dis-act');
+	})
+	iosMob.addEventListener('mouseout', function () {
+		iosMob.classList.toggle('active-mob');
+		bgBlue.classList.add('dis-act');
+	})
+}

@@ -2982,18 +2982,265 @@ ul {
   }
 
   .tactic__item-5 {
-    margin-left: -40px;
+    margin-left: -20px;
   }
 
   .trade__international-img {
-    margin-top: -36px;
+    margin-top: -21px;
   }
 }
 
-@media (max-width: 1000px) {
+.bg-blu-fone {
+  fill: #D7EEFC;
+}
 
-  .anim111,
-  .anim112 {
-    height: 140px;
+.active-mob .bg-blu {
+  animation-name: bg-blu;
+  animation-duration: 0.9s;
+}
+
+.active-mob .bg-blu-fone {
+  display: block;
+  fill: #D7EEFC;
+  /* fill: #000; */
+  animation-name: bg-blu;
+  animation-duration: 0.9s;
+}
+
+.bg-blu-fone.dis-act {
+  animation-name: dis-act;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in;
+  top: -50%;
+  left: -50%;
+  transform: scale(0.8);
+  opacity: 0;
+  fill: #D7EEFC;
+  /* fill: red; */
+}
+
+@keyframes dis-act {
+  0% {
+    opacity: 1;
+    transform: scale(1) translateX(0) translateY(0);
+  }
+
+  99% {
+    opacity: 1;
+    transform: scale(0.8) translateX(10%) translateY(10%);
+  }
+
+  100% {
+    opacity: 0;
   }
 }
+
+.active-mob .bg-blu-avt {
+  animation-name: bg-blu-avt;
+  animation-duration: 0.9s;
+}
+
+@keyframes bg-blu {
+  0% {
+    transform: scale(0.4) translateX(50%) translateY(50%);
+    width: 0%;
+    height: 0%;
+  }
+
+  100% {
+    transform: scale(1);
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@keyframes bg-blu-avt {
+  0% {
+    transform: scale(1) translateX(0) translateY(0);
+    width: 100%;
+    height: 100%;
+
+  }
+
+  100% {
+    transform: scale(1);
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/*-мегафон*/
+.active-mob .gg {
+  animation-name: gg;
+  animation-duration: 0.9s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes gg {
+  0% {
+    transform: translateX(0%);
+  }
+
+  45% {
+    transform: translateX(-13%) translateY(-2%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+/*-мегафон*/
+
+
+
+/* -иконка сообщений*/
+.active-mob .a1 {
+  animation-name: a1;
+  animation-duration: 0.9s;
+  animation-timing-function: ease-in;
+}
+
+
+@keyframes a1 {
+  0% {
+    transform: translateX(0%);
+  }
+
+  45% {
+    transform: translateX(-7%) translateY(-4%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+/*-иконка сообщений*/
+
+/*-лампочка*/
+.active-mob .light {
+  animation-name: light;
+  animation-duration: 0.9s;
+  animation-timing-function: ease-in;
+  fill: #FFFF00;
+}
+
+
+@keyframes light {
+  0% {
+    fill: #fff;
+  }
+
+  100% {
+    fill: #FFFF00;
+  }
+}
+
+/*-лампочка */
+
+.active-mob .wifi {
+  animation-name: wifi;
+  animation-duration: 0.9s;
+  animation-timing-function: ease-in;
+}
+
+
+@keyframes wifi {
+  0% {}
+
+  100% {
+    fill: #008000;
+  }
+}
+
+
+.active-mob .box {
+  animation-name: box;
+  animation-duration: 0.9s;
+  animation-timing-function: ease-in;
+}
+
+
+@keyframes box {
+  0% {
+    transform: translateX(0%);
+  }
+
+  45% {
+    transform: translateY(-6%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+
+
+
+.active-mob .fb {
+  animation-name: fb;
+  animation-duration: 0.9s;
+  animation-timing-function: ease-in;
+}
+
+
+@keyframes fb {
+  0% {
+    transform: translateX(0%);
+  }
+
+  45% {
+    transform: translateX(-2%) translateY(-2%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.active-mob .inst {
+  animation-name: inst;
+  animation-duration: 0.9s;
+  animation-timing-function: ease-in;
+}
+
+
+@keyframes inst {
+  0% {
+    transform: translateX(0%);
+  }
+
+  45% {
+    transform: translateY(-6%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+
+
+
+/* .column {
+  animation-name: column;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+}
+
+
+@keyframes column {
+  0% {
+    height: auto;
+  }
+
+  45% {
+    height: 200%;
+  }
+
+  100% {
+    height: auto;
+  }
+} */
